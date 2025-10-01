@@ -1,6 +1,8 @@
 #  API REST Produits (Node.js + Express + MongoDB)
 ## Description
 Cette API REST complète permet de gérer un catalogue de produits avec une base de données MongoDB. Elle expose des endpoints CRUD (Create, Read, Update, Delete) pour une gestion optimale des produits, avec un système de statut de stock contrôlé.
+<img width="520" height="286" alt="Capture d’écran du 2025-10-01 21-11-22" src="https://github.com/user-attachments/assets/6a4d0bc7-bcc4-4d81-ad01-4ccfe5b56072" /><img width="240" height="195" alt="Capture d’écran du 2025-10-01 21-11-53" src="https://github.com/user-attachments/assets/150bd691-487b-4a74-8b0a-1f47321241d9" />
+
 
 ## Fonctionnalités
 
@@ -31,8 +33,8 @@ dotenv - Gestion des variables d'environnement
  ## Installation et déploiement
 ### 1. Cloner le projet
 ```
-git clone https://github.com/votre-compte/api-products.git
-cd api-products
+git clone https://github.com/IsmailMahamat315/API_REST_CRUD_PRODUIT.git
+cd API_REST_CRUD_PRODUIT
 ```
 ### 2. Installer les dépendances
 ```
@@ -154,7 +156,7 @@ Exemple :
 
 ```
 PATCH /products/651234abcd12345678901234/petite%20stock
-```
+
 ### Supprimer un produit
 
 DELETE /products/:id
@@ -166,24 +168,24 @@ Réponses :
 404 - Produit non trouvé
 
 #### Codes de statut HTTP
-Code	Signification
-200	Succès
-201	Créé avec succès
-400	Requête invalide
-404	Ressource non trouvée
-500	Erreur serveur interne
-### Validation des données
-Valeurs autorisées pour stockStatus
-"en stock" - Produit disponible en quantité suffisante
+- Code	Signification
+- 200	Succès
+- 201	Créé avec succès
+- 400	Requête invalide
+- 404	Ressource non trouvée
+- 500	Erreur serveur interne
+### Validation des données
+- Valeurs autorisées pour stockStatus
+- "en stock" - Produit disponible en quantité suffisante
 
-"petite stock" - Produit disponible mais en quantité limitée
+- "petite stock" - Produit disponible mais en quantité limitée
 
-"pas en stock" - Produit temporairement indisponible
+- "pas en stock" - Produit temporairement indisponible
 
-Contraintes de validation
-productName : Champ obligatoire
+### Contraintes de validation
+- productName : Champ obligatoire
 
-price : Doit être un nombre positif ou zéro
+- price : Doit être un nombre positif ou zéro
 
-stockStatus : Doit appartenir à la liste des valeurs autorisées
+- stockStatus : Doit appartenir à la liste des valeurs autorisées
 
