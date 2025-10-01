@@ -1,0 +1,44 @@
+GET http://localhost:3000/produits
+
+###
+
+GET http://localhost:3000/produits/68dd80f36c6284f595a745ea
+###
+
+POST http://localhost:3000/produits
+Content-Type: application/json
+
+
+{
+    "productName": "viande",
+    "price": 2000,
+    "stockStatus": "petite stock"
+}
+
+
+###
+
+PATCH http://localhost:3000/produits/68dd80f36c6284f595a745ea
+Content-Type: application/json
+
+
+{
+   "stockStatus": "pas en stock"
+}
+
+
+###
+
+PATCH http://localhost:3000/produits/688366b3c1c791417a21c970
+Content-Type: application/json
+
+{
+    "productName": "avocat",
+    "price": 3000
+}
+
+
+
+###
+
+DELETE http://localhost:3000/produits/6883758abd802c525f770b1f
