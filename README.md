@@ -1,7 +1,9 @@
 #  API REST Produits (Node.js + Express + MongoDB)
 ## Description
 Cette API REST complète permet de gérer un catalogue de produits avec une base de données MongoDB. Elle expose des endpoints CRUD (Create, Read, Update, Delete) pour une gestion optimale des produits, avec un système de statut de stock contrôlé.
+
 <img width="520" height="286" alt="Capture d’écran du 2025-10-01 21-11-22" src="https://github.com/user-attachments/assets/6a4d0bc7-bcc4-4d81-ad01-4ccfe5b56072" /><img width="240" height="195" alt="Capture d’écran du 2025-10-01 21-11-53" src="https://github.com/user-attachments/assets/150bd691-487b-4a74-8b0a-1f47321241d9" />
+
 
 
 ## Fonctionnalités
